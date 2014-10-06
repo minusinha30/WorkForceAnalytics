@@ -1,0 +1,23 @@
+.container {
+    background-color: ghostwhite;
+}
+.row {
+    background-color: lightgray;
+}
+.view-container {
+    position:relative;
+    margin-left:250px;
+    position:relative;
+    background:white;
+    border:1px solid black;
+    height:500px;
+    background: linear-gradient(
+            to bottom,
+            #E0EBEB 5%,
+            #E3EDED 45%,
+            #E6EFEF 20%,
+            #E9F1F1 20%,
+            #ECF3F3 20%
+
+    );
+}

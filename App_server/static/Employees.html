@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel = "stylesheet" type = "text/css" href="employeeApp.css"/>
+    </head>
+
+    <body ng-app="employeeApp">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-8"></div>
+            <div class="col-xs-6 col-md-4"></div>
+            <h1 align="center"> <img id="myImage" src="Intersources.jpg" width="150" align =left >Work Force Analytics</h1>
+        </div>
+        <br>
+        <div><input type="text">
+            <span class="glyphicon glyphicon-search"></span>Search</div>
+        <br>
+        <div class="col-md-2" style="background-color:#CCFFCC">
+            <ul class="nav nav-tabs nav-stacked">
+
+                <li ng-class ='dashboard'>
+                    <a href="#dashboard"> Dashboard </a>
+                </li>
+                <li ng-class ='headcount'>
+                    <a href="#headcount">Headcount Charts</a>
+                </li>
+                <li ng-class ='talentsearch'>
+                    <a href="#talentsearch">Internal Talent Search</a>
+                </li>
+                <li ng-class ='trends'>
+                    <a href="#trends">Trends</a>
+                </li>
+            </ul>
+        </div>
+        <!--<h3>Students</h3> -->
+
+        <div class="view-container">
+            <div ng-view></div>
+        </div>
+          <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+          <script src="http://code.angularjs.org/1.2.1/angular-route.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+          <script type="text/javascript" src="Chart.js"></script>
+          <script type="text/javascript" src="tc-angular-chartjs.js"></script>
+          <script src= "employeeApp.js"></script>
+        </div> <!-- Container div ends-->
+
+    </body>
+</html>
